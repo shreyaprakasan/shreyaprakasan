@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Shreya!
-- 👀 I’m interested in learning new things about software engineering :)
-- 🌱 I’m currently pursuing my bachelor's degree in Computer Science Engineering at VIT University.
+- 👀 I’m interested in building cool new tools to make our lives a little easier :)
+- 🌱 I’m currently working as a Senior Software Engineer at Pune, India.
 
 <!---
 - 💞️ I’m looking to collaborate on ...
