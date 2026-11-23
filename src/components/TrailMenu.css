@@ -1,0 +1,86 @@
+
+.trail-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.trail-menu-title {
+  position: relative;
+  z-index: 2;
+  cursor: default;
+}
+
+.trail-menu-options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+/* Lower the Socials and Projects arcs without moving their labels. */
+.trail-menu--left .trail-menu-options {
+  top: calc(50% + 35px);
+}
+
+.trail-menu-option {
+  position: absolute;
+
+  left: var(--x);
+  top: var(--y);
+
+  width: 58px;
+  height: 58px;
+
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  border: none;
+  background: #403052;
+  color: var(--text-h);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 23px;
+  text-decoration: none;
+
+  transition:
+    background-color 120ms ease-out,
+    color 120ms ease-out,
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+
+.trail-menu-option:hover {
+  background: #e9c5ff;
+  color: #261435;
+
+  /* Slight enlargement: 4% */
+  transform: translate(-50%, -50%) scale(1.04);
+
+  /* Smaller, softer glow */
+  box-shadow:
+    0 0 8px 1px rgba(216, 180, 254, 0.45),
+    0 0 16px 3px rgba(192, 132, 252, 0.2);
+}
+
+.trail-menu-option:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.trail-menu-option.is-placeholder {
+  cursor: default;
+}
+
+/* No popup animation or hover-triggered visibility. */
+
+@media (prefers-reduced-motion: reduce) {
+  .trail-menu-option {
+    transition: none;
+  }
+}
