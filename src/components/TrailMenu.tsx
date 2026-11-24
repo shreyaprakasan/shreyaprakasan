@@ -63,12 +63,14 @@ function TrailMenu({ title, side, options }: TrailMenuProps) {
               }
               href={option.href}
               target={
-                option.href?.startsWith("http") || option.id === "view"
-                  ? "_blank"
-                  : undefined
+                option.id === "download"
+                  ? undefined
+                  : option.href?.startsWith("http") || option.id === "view"
+                    ? "_blank"
+                    : undefined
               }
               rel="noopener noreferrer"
-              download={option.id === "download" ? true : undefined}
+              download={option.id === "download" ? "resume.pdf" : undefined}
               aria-label={option.label}
               onClick={
                 option.href ? undefined : (event) => event.preventDefault()

@@ -37,16 +37,27 @@ const socialsOptions: MenuOption[] = [
     href: "tel:+917736415108",
   },
 ];
+const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
 const resumeOptions: MenuOption[] = [
-  { id: "view", label: "View resume", icon: <FiEye /> },
-  { id: "download", label: "Download resume", icon: <FiDownload /> },
+  {
+    id: "view",
+    label: "View resume",
+    icon: <FiEye />,
+    href: resumeUrl,
+  },
+  {
+    id: "download",
+    label: "Download resume",
+    icon: <FiDownload />,
+    href: resumeUrl,
+  },
 ];
 
 const projectOptions: MenuOption[] = [
   {
     id: "project-1",
-    label: "Project 1",
+    label: "Face Authentication App",
     icon: <FiCode />,
     href: "https://github.com/shreyaprakasan/Face-Analysis-Application",
   },
