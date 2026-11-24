@@ -1,13 +1,15 @@
 
 import Hero from './components/Hero'
-import './App.css'
 import BubbleTrail from './components/BubbleTrail'
+import AboutMe from './components/AboutMe'
+import './App.css'
 
 function App() {
   return (
     <main className="portfolio">
       <Hero />
       <BubbleTrail />
+      <AboutMe />
     </main>
   )
 }
