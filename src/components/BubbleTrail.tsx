@@ -26,21 +26,21 @@ const socialsOptions: MenuOption[] = [
   },
   {
     id: "email",
-    label: "Email",
+    label: "shreya.prakasan2002@gmail.com",
     icon: <FiAtSign />,
     href: "mailto:shreya.prakasan2002@gmail.com",
   },
   {
     id: "phone",
-    label: "Phone",
+    label: "+917736415108",
     icon: <FiPhone />,
     href: "tel:+917736415108",
   },
 ];
 
 const resumeOptions: MenuOption[] = [
-  { id: "view", label: "View résumé", icon: <FiEye /> },
-  { id: "download", label: "Download résumé", icon: <FiDownload /> },
+  { id: "view", label: "View resume", icon: <FiEye /> },
+  { id: "download", label: "Download resume", icon: <FiDownload /> },
 ];
 
 const projectOptions: MenuOption[] = [
@@ -50,9 +50,6 @@ const projectOptions: MenuOption[] = [
     icon: <FiCode />,
     href: "https://github.com/shreyaprakasan/Face-Analysis-Application",
   },
-  { id: "project-2", label: "Project 2", icon: <FiCode /> },
-  { id: "project-3", label: "Project 3", icon: <FiCode /> },
-  { id: "project-4", label: "Project 4", icon: <FiCode /> },
 ];
 
 type TrailDot = {
