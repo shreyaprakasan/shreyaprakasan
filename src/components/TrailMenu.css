@@ -131,3 +131,71 @@
     transition: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .trail-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .trail-menu-options,
+  .trail-menu--left .trail-menu-options {
+    position: static;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    pointer-events: auto;
+  }
+
+  .trail-menu-option {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 54px;
+    height: 54px;
+
+    flex-shrink: 0;
+    transform: none;
+
+    font-size: 21px;
+  }
+
+  .trail-menu-option:hover {
+    transform: scale(1.04);
+  }
+
+  /* Keep tooltips above their respective icons */
+  .trail-menu-tooltip {
+    bottom: calc(100% + 8px);
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 380px) {
+  .trail-menu-options {
+    gap: 8px;
+  }
+
+  .trail-menu-option {
+    width: 48px;
+    height: 48px;
+    font-size: 19px;
+  }
+}

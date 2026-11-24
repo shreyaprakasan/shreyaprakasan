@@ -68,3 +68,43 @@
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
+
+/* Mobile and tablet layout */
+@media (max-width: 1024px) {
+  .bubble-trail {
+    width: 100%;
+    height: auto;
+
+    margin: 48px auto 0;
+    padding: 24px 16px 64px;
+    box-sizing: border-box;
+
+    transform: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  /* Hide the winding path on smaller screens */
+  .trail-dot {
+    display: none;
+  }
+
+  /* Remove desktop absolute positioning */
+  .trail-item {
+    position: static;
+    transform: none;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-bubble {
+    font-size: clamp(23px, 5vw, 32px);
+    text-align: center;
+  }
+}
