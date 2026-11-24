@@ -57,7 +57,14 @@
 }
 
 body {
+  width: 100%;
+  overflow-x: clip;
   margin: 0;
+}
+
+html {
+  width: 100%;
+  overflow-x: clip;
 }
 
 h1,

@@ -52,8 +52,6 @@ function TrailMenu({ title, side, options }: TrailMenuProps) {
           return (
             <a
               key={option.id}
-              target="_blank"
-              rel="noopener noreferrer"
               className={`trail-menu-option ${
                 option.href ? "" : "is-placeholder"
               }`}
@@ -64,13 +62,19 @@ function TrailMenu({ title, side, options }: TrailMenuProps) {
                 } as CSSProperties
               }
               href={option.href}
+              target={
+                option.href?.startsWith("http") || option.id === "view"
+                  ? "_blank"
+                  : undefined
+              }
+              rel="noopener noreferrer"
+              download={option.id === "download" ? true : undefined}
               aria-label={option.label}
               onClick={
                 option.href ? undefined : (event) => event.preventDefault()
               }
             >
               {option.icon}
-
               <span className="trail-menu-tooltip">{option.label}</span>
             </a>
           );
