@@ -1,5 +1,4 @@
-
-import './Hero.css'
+import "./Hero.css";
 
 function Hero() {
   return (
@@ -12,11 +11,15 @@ function Hero() {
         </h1>
       </div>
 
-      <div className="avatar-placeholder" aria-label="Avatar placeholder">
-        <span>👩🏻‍💻</span>
+      <div className="avatar-placeholder">
+        <img
+          src={`${import.meta.env.BASE_URL}avatar.png`}
+          alt="Shreya's cartoon avatar with a laptop"
+          className="hero-avatar"
+        />
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
